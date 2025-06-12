@@ -109,13 +109,21 @@ header {
     flex-direction: column;
     text-align: center;
     color: #fff;
-    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../img/hb.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/hb.jpg) center/cover no-repeat;
 }
 
 .header-title h1 {
     font-size: 2.8rem;
     letter-spacing: 2px;
     animation: anim1 1.1s both;
+}
+
+.header-title p {
+    margin: 1.8rem auto;
+    max-width: 700px;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 1.7;
 }
 
 @keyframes anim1 {
@@ -156,8 +164,48 @@ header {
         animation-timing-function: ease-in;
     }
 
-    100%{
+    100% {
         transform: translateY(0);
         animation-timing-function: ease-out;
     }
+}
+
+.header-form {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 3rem 0;
+    border-radius: 0.2rem;
+}
+
+.header-form h3 {
+    font-size: 1.2rem;
+}
+
+.header-form form {
+    flex-direction: column;
+    margin-top: 1.8rem;
+}
+
+.header-form form .form-control {
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.header-form input[type="date"] {
+    text-transform: uppercase;
+}
+
+.header-form input:not([type="submit"])::placeholder {
+    color: #fff;
+}
+::-webkit-calendar-picker-indicator{
+    filter: invert(1);
+}
+
+.header-form .btn{
+    margin-top: 0.8rem;
+}
+
+.navbar-cng{
+    background: #fff;
+    box-shadow: 0 4px 5px 0px rgba(48,48,48,0.2);
+    transition: var(--trans);
 }

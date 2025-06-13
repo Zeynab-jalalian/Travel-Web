@@ -7,3 +7,13 @@ window.addEventListener("scroll", () => {
     }
 });
 
+const navbarCollapse=document.getElementById("navbar-collapse");
+const navbarShowbtn=document.getElementById("navbar-show-btn");
+const navbarClosebtn=document.getElementById("navbar-close-btn");
+
+navbarShowbtn.addEventListener("click",()=>{
+    navbarCollapse.classList.add("navbar-collapse-rmw");
+})
+navbarClosebtn.addEventListener("click",()=>{
+    navbarCollapse.classList.remove("navbar-collapse-rmw");
+})
